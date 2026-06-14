@@ -1,13 +1,13 @@
 {
-  "name": "rust-neon-next-app",
+  "name": "rust-napi-next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev:next": "next dev",
     "dev:rust": "cd rust-lib && npm run build",
     "dev": "npm run dev:rust && npm run dev:next",
-    "build": "next build && mkdir -p dist/standalone/rust-lib && cp -r rust-lib/index.js rust-lib/index.d.ts rust-lib/*.node dist/standalone/rust-lib/",
-    "start": "next start",
+    "build": "next build && mkdir -p out/standalone/rust-lib && cp -r rust-lib/index.js rust-lib/index.d.ts rust-lib/*.node out/standalone/rust-lib/",
+    "start": "node out/standalone/server.js",
     "lint": "eslint"
   },
   "dependencies": {
