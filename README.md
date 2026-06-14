@@ -9,3 +9,17 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Building for deployment
+
+First, build the project for production
+
+```bash
+npm run build
+```
+
+In docker run the standalone server, here is an example
+
+```bash
+node ./dist/standalone/server.js
+```
