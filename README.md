@@ -21,5 +21,5 @@ npm run build
 In docker run the standalone server, here is an example
 
 ```bash
-node ./dist/standalone/server.js
+node ./out/standalone/server.js
 ```
