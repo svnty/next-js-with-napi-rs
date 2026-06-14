@@ -1,0 +1,21 @@
+{
+  "name": "rust-lib",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.0"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "napi": {
+    "name": "rust-lib"
+  }
+}

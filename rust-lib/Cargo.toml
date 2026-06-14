@@ -1,0 +1,18 @@
+[package]
+name = "rust-lib"
+version = "0.1.0"
+license = "ISC"
+edition = "2024"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+napi = { version = "2.12.2", features = ["napi4"] }
+napi-derive = "2.12.2"
+
+[build-dependencies]
+napi-build = "2.0.1"
